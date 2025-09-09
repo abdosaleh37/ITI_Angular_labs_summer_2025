@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+</head>
+<body>
+    <h1 style="width: 50%;margin:10px auto">Slide Show <span style="color: black">Game</span></h1>
+    <div class="parent">
+        <img src="imgs/1.jpg" alt="">
+        <div class="buttons">
+            <button id="previous"><--</button>
+            <button id="play">Play</button>
+            <button id="stop">Stop</button>
+            <button id="next">--></button>
+        </div>
+
+    </div>
+</body>
+<style>
+    h1{
+        text-align: center;
+        color: blue;
+        font-weight: bold;
+        border: 3px solid yellow;
+    }
+    .parent{
+        width: 50%;
+        margin: 0 auto;
+    }
+    img{
+        width: 600px;
+        height: 480px;
+        margin: auto;
+        display: block;
+        border: 5px solid yellow;
+    }
+    .buttons{
+        width: 600px;
+        margin: 10px auto;
+    }
+    button{
+        margin: 0 40px;
+        padding: 20px;
+        border-radius: 30%;
+        color: white;
+        background-color: chocolate;
+    }
+    #previous{
+        float: left;
+    }
+    #next{
+        float: right;
+    }
+    #stop{
+        background-color: red;
+    }
+    #play{
+        background-color: green;
+    }
+</style>
+<script src="main.js"></script>
+</html>

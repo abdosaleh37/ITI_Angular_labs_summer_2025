@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Moving</title>
+</head>
+<body>
+    <div id="car_div">
+        <img src="car.gif" alt="" id="car">
+    </div>
+    <div id="buttons">
+        <button id="back" value="Go Back">Go Back</button>
+        <button id="forward" value="Go Forward">Go Forward</button>
+    </div>
+</body>
+<style>
+    body{
+        background-color: rgb(146, 207, 243);
+    }
+    #car_div{
+        height: 400px;
+    }
+    img{
+        width: 25%;
+        margin: 100px 0;
+        position: absolute;
+    }
+    #buttons{
+        width: 35%;
+        margin: auto;
+    }
+    #back, #forward{
+        padding: 20px;
+        margin: 20px;
+        width: 150px;
+        border-radius: 20px;
+        border-color: gold;
+        color: white;
+        font-weight: bold;
+    }
+    #back{
+        background-color: red;
+    }
+    #forward{
+        background-color: green;
+    }
+</style>
+<script src="main.js"></script>
+</html>

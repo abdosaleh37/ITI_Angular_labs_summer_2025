@@ -1,0 +1,120 @@
+<html lang="en">
+    <head>
+        <title>My HTML Example Page</title>
+        <meta name="description" content="Sample HTML Demonstration Tags">
+    </head>
+
+    <body bgcolor="#f5f5f5" link="blue" vlink="purple" alink="red">
+
+        <!-- Heading and paragraph -->
+        <h1>Welcome to html example</h1>
+        <p>This Page demonstrates <b>Basic Html Tags</b> and their attributes
+            some are <i>Depricated</i> in modern html. and we show them here</p>
+
+        <!-- Lists -->
+        <h2>Lists</h2>
+
+        <p>Unordered lists</p>
+        <ul type="circle">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+        </ul>
+
+        <p>Order Lists</p>
+        <ol type="A" start="4">
+            <li>Step 1</li>
+            <li>Step 2</li>
+            <li>Step 3</li>
+        </ol>
+
+        <p>Definition Lists</p>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Hyper Text Markup Language</dd>
+            <dt>CSS</dt>
+            <dd>Cascaded Style Sheets</dd>
+        </dl>
+
+        <!-- Links and Anchors-->
+        <h2>LInks</h2>
+        <a href="https://www.w3.org" target="_blank" title="W3C">Visit w3c</a>
+        <p><a href="#bottom" >Jump To Bottom</a></p>
+
+        <!-- Images -->
+        <h2>Images</h2>
+        <img src="car.jpg" alt="Logo of car" width="300" height="150" border="1" align="left">
+        <p>This is an image with attributes</p>
+        <br clear="all">
+
+        <!-- Tables -->
+        <h2>Table</h2>
+        <table border="1" cellpadding="5" cellsapacing="0" width="300">
+            <caption>Student Scores</caption>
+            <tr bgcolor="#ddd">
+                <th>Name</th>
+                <th>Score</th>
+            </tr>
+            <tr align="center">
+                <th>Alice</th>
+                <th>90</th>
+            </tr>
+            <tr align="center">
+                <th>Bob</th>
+                <th>85</th>
+            </tr>
+        </table>
+            <!-- Forms -->
+        <h2>Form</h2>
+        <form action="" method="post">
+            <label for="name">Name </label>
+            <input type="text" name="name" size="20" maxlength="50"><br><br>
+
+            <label for="password">password </label>
+            <input type="password" name="password"><br><br>
+
+            <label for="gender">Gender </label>
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="female">Female <br><br>
+
+            <input type="checkbox" name="hoppy" value="sports">Sports
+            <input type="checkbox" name="hoppy" value="music">Music <br><br>
+
+            <label for="country">Country </label>
+            <select name="country">
+                <option value="EG">Egypt </option>
+                <option value="USA">USA </option>
+                <option value="FR">France </option>
+            </select><br><br>
+
+            <label for="comment">Comment</label>
+            <textarea name="comment" rows="4" cols="40"></textarea><br><br>
+
+            <input type="submit" value="Send">
+            <input type="reset" value="Clear">
+        </form>
+
+        <!-- Multimedia -->
+        <h2>Multimedia</h2>
+        <object data="intro.mov" type="video/quicktime" width="320" height="240">
+            <param name="autoplay" value="true">
+            Your browser does not support embedded videos.
+        </object>
+
+        <!-- Inline Frame -->
+        <h2>Inline Frames</h2>
+        <iframe src="https://www.example.com" frameborder="1" scrolling="auto" width="400" height="300">
+            Your browser does not support iframes
+        </iframe>
+
+        <!-- Deprecated tags -->
+        <h2>Deprecated tags</h2>
+        <font face="Arial" color="red" size="4">This item uses &lt;font&gt; tag</font>
+
+        <center><p>This text is centered using &lt;center&gt; depricated tag.</p></center>
+
+        <a name="bottom"></a>
+
+        <p>You Reached the bottom</p>
+    </body>
+</html>

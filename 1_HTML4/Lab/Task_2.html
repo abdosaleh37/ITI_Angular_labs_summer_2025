@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>Login Page</title>
+    </head>
+
+    <body>
+        <br>
+        <h2 align="center">Welcome To login page</h2>
+
+        <form action="server.html" method="post">
+            <table border="2" width="50%" align="center" cellpadding="5">
+                <tr>
+                    <th colspan="2"> Refister Form </th>
+                </tr>
+                <tr>
+                    <td> Username </td>
+                    <td><input type="text" name="name" size="50" value="Enter your name"></td>
+                </tr>
+                <tr>
+                    <td> password </td>
+                    <td><input type="password" name="password" size="50"></td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Gender </td>
+                    <td><input type="radio" name="gender" value="male" checked> Male </td>
+                </tr>
+                <tr>
+                    <td><input type="radio" name="gender" value="female"> Female </td>
+                </tr>
+                <tr>
+                    <td> University </td>
+                    <td> <select name="university" multiple>
+                        <option> Choose Your University </option>
+                        <option value="cairo">Cairo</option>
+                        <option value="alex">Alex</option>
+                        <option value="zag">Zagazig</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td> CV </td>
+                    <td><input type="file" name="cv"></td>
+                </tr>
+                <tr align="center">
+                    <td colspan="2"> Interests</td>
+                </tr>
+                <tr align="center">
+                    <td colspan="2">
+                        <table width="100%">
+                            <tr>
+                                <td><input type="checkbox" name="interests" value="football" checked> Football</td>
+                                <td><input type="checkbox" name="interests" value="tennis" > tennis</td>
+                                <td><input type="checkbox" name="interests" value="basketball"> basketball</td>
+                                <td><input type="checkbox" name="interests" value="reading"> reading</td>
+                                <td><input type="checkbox" name="interests" value="sleeping" checked> sleeping</td>
+                                <td><input type="checkbox" name="interests" value="eating" > eating</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td colspan="2">Comments</td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><textarea name="comment" cols="90" rows="10"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><input type="submit" name="submit" value="OK"> &nbsp;
+                                                    <input type="reset" value="cancel">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

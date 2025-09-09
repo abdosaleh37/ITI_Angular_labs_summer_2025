@@ -1,0 +1,54 @@
+    body{
+        padding: 20px 100px;
+        text-align: center;
+    }
+    h1{
+        width: 50%;
+        margin: 10px auto 50px;
+        color: rgba(165, 42, 42);
+        font-weight: bold;
+    }
+    form{
+        width: 80%;
+        margin: 10px auto;
+    }
+    #task_name{
+        width: 60%;
+        height: 30px;
+        padding: 5px 10px;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    }
+    #add{
+        width: 100px;
+        padding: 12px 20px;
+        margin-left: 40px;
+        background-color: grey;
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    table{
+        width: 70%;
+        margin: 50px auto;
+    }
+    th{
+        color: white;
+        background-color: brown;
+    }
+    .task{
+        width: 60%;
+        color: brown;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .delete{
+        width: 30px;
+    }
+    td button{
+        padding: 0;
+    }
