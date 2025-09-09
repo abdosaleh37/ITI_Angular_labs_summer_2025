@@ -15,9 +15,7 @@ previous.addEventListener('click', () => {
     image.src = `imgs/${imageIndex}.jpg`;
 });
 
-next.addEventListener('click', () => {
-    iterate();
-});
+next.addEventListener('click', iterate);
 
 play.addEventListener('click', () => {
     clearInterval(interval);
@@ -28,7 +26,7 @@ stop.addEventListener('click', () => {
     clearInterval(interval);
 });
 
-let iterate = function(){
+function iterate(){
     imageIndex++;
     if(imageIndex == 5){
         imageIndex = 1;
