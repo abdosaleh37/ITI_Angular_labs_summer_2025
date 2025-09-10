@@ -1,4 +1,3 @@
-resetBackgroundColors();
 const task_input = document.getElementById("task_name");
 const addBtn = document.getElementById("add");
 const task_table = document.getElementById("task_table");
@@ -23,7 +22,6 @@ addBtn.addEventListener('click', (e) => {
             <td><button type="submit"><img src="assets/delete.webp" alt="Delete" class="delete"></button></td>`;
         
         task_table.appendChild(task);
-        resetBackgroundColors();
         task_input.value = '';
     }
     else{
@@ -45,17 +43,6 @@ task_table.addEventListener('click', (e) => {
     else if(e.target.tagName === "IMG"){
         if(confirm("Are you sure to delete this task!")){
             row.remove();
-            resetBackgroundColors();
         }
     }
 });
-
-function resetBackgroundColors(){
-    let tasks = document.getElementsByTagName("tr");
-    for(let i = 0; i < tasks.length; i++){
-        if(i % 2)
-            tasks[i].style.backgroundColor = "white";
-        else
-            tasks[i].style.backgroundColor = "rgb(187, 187, 187, 0.6)";
-    }
-}
