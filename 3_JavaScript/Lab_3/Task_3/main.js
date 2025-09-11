@@ -6,9 +6,10 @@ let gender = params.get("gender");
 let color = params.get("color");
 
 document.body.innerHTML = `
-    <img src="imgs/${gender}.jpg" alt="" style="vertical-align:middle;">
-    <span style="font-weight:bold;">Welcome </span>
-    <span style="color:${color};font-weight:bold;">${name}</span>`;
+    <div style="width:50%;margin:10% auto;border:3px solid black;text-align:center">
+        <img src="imgs/${gender}.jpg" alt="😊" style="vertical-align:middle;width:300px">
+        <p style="font-weight:bold;">Welcome <span style="color:${color};font-weight:bold;">${name}</span></p>
+    </div>`;
 
 
 

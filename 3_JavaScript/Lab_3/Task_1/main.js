@@ -10,6 +10,7 @@ function popUp(){
 let i = 0;
 function start(){
     popUp();
+    clearInterval(intervalId);
     intervalId = setInterval(() => {
             childWindow.scrollBy(0, 20);
             i += 20;

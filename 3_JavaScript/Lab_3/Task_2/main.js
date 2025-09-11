@@ -18,6 +18,8 @@ function popUp(){
 let i = 0;
 function start(){
     popUp();
+    clearInterval(intervalId);
+    i = 0;
     intervalId = setInterval(() => {
 
         childWindow.document.write(message[i]);
