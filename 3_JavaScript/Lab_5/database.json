@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Abdo Saleh",
+      "email": "abdosaleh@gmail.com",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "name": "Mustafa Ahmed",
+      "email": "mostafaahmed@gmail.com",
+      "role": "customer"
+    },
+    {
+      "id": "3",
+      "name": "Ahmed Mohamed",
+      "email": "ahmedmohamed@gmail.com",
+      "role": "user"
+    }
+  ]
+}

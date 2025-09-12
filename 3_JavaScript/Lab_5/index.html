@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>User Management</h1>
+
+    <form id="usersForm">
+        <input type="text" id="name" placeholder="Enter name" required>
+        <input type="email" id="email" placeholder="Enter email" required>
+        <input type="text" id="role" placeholder="Enter role" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <hr>
+
+    <table id="usersTable">
+        <caption>Users Table</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Role</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        
+        <tbody id="usersTableBody">
+            
+        </tbody>
+    </table>
+
+    <script src="main.js"></script>
+</body>
+</html>
