@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-weight: 600;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    margin-right: 1rem;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.info {
+    display: inline-block;
+}
+
+h2, h3 {
+    font-size: 1rem;
+    color: hsl(0, 0%, 81%);
+}
+
+.special h2, .special h3 {
+    color: rgb(37, 36, 36);
+}
+
+h3 {
+    opacity: 0.5;
+}
+
+p {
+    margin: 2rem 0;
+}
+
+#header {
+    font-size: 1.7rem;
+}
+
+#desc {
+    font-size: 1rem;
+    line-height: 1.5;
+    opacity: 0.7;
+}
+
+.cards {
+    width: 90%;
+    margin: 80px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(2, 50%);
+    grid-template-areas: 'card1 card1 card2 card3'
+                        'card4 card5 card5 card3';
+    justify-content: space-between;
+}
+
+.cards > div {
+    padding: 3rem;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.card1 {
+    grid-area: card1;
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: 80% 0;
+    background-color: hsl(263, 55%, 52%);
+    color: hsl(210, 46%, 95%);
+}
+
+.card2 {
+    grid-area: card2;
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(210, 46%, 95%);
+}
+
+.card3 {
+    grid-area: card3;
+    background-color: hsl(0, 0%, 100%);
+    color: rgb(97, 94, 94);
+    box-shadow: 12px 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card4 {
+    grid-area: card4;
+    background-color: hsl(0, 0%, 100%);
+    color: rgb(97, 94, 94);
+    box-shadow: 12px 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card5 {
+    grid-area: card5;
+    background-color: hsl(219, 29%, 14%);
+    color: hsl(210, 46%, 95%);
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 12px;
+    }
+
+    .cards {
+        margin: 20px auto;
+        grid-template: auto / auto;
+        grid-template-areas: 'card1'
+                            'card2'
+                            'card4'
+                            'card5'
+                            'card3';
+    }
+}
