@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <audio src="music/Dari_Ya_2lby.mp3">music</audio>
+    <div class="container">
+        <div class="song-container">
+            <img src="images/Dari_Ya_2lby.png" alt="">
+            <span id="title">Title</span>
+            <div class="time-container">
+                <span id="current-time">00:00</span>
+                <input type="range" name="time-range" id="time-range">
+                <span id="total-time">00:00</span>
+            </div>
+        </div>
+
+        <div class="control-container">
+            <div class="volume-container">
+                <input type="range" name="volume-range" id="volume-range">
+                <i id="volumeBtn" class="fa-solid fa-volume-high"></i>
+                <span id="volume-value">100</span>
+            </div>
+            <div class="buttons-container">
+                <i id="backwardBtn" class="fa-solid fa-backward"></i>
+                <i id="playBtn" class="fa-solid fa-play"></i>
+                <i id="pauseBtn" class="fa-solid fa-pause"></i>
+                <i id="stopBtn" class="fa-solid fa-stop"></i>
+                <i id="forwardBtn" class="fa-solid fa-forward"></i>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
