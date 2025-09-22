@@ -60,14 +60,14 @@ audio.addEventListener('loadedmetadata', function() {
     timeRange.max = audio.duration;
     let minutes = Math.floor(audio.duration / 60);
     let seconds = Math.floor(audio.duration % 60);
-    totalTime.innerHTML = `${(minutes > 9) ? minutes : `0${minutes}`}:${(seconds > 10) ? seconds : `0${seconds}`}`;
+    totalTime.innerHTML = `${(minutes > 9) ? minutes : `0${minutes}`}:${(seconds > 9) ? seconds : `0${seconds}`}`;
 });
 
 audio.addEventListener('timeupdate', function () {
     timeRange.value = audio.currentTime;
     let minutes = Math.floor(audio.currentTime / 60);
     let seconds = Math.floor(audio.currentTime % 60);
-    currentTime.innerHTML = `${(minutes > 9) ? minutes : `0${minutes}`}:${(seconds > 10) ? seconds : `0${seconds}`}`;
+    currentTime.innerHTML = `${(minutes > 9) ? minutes : `0${minutes}`}:${(seconds > 9) ? seconds : `0${seconds}`}`;
 });
 
 timeRange.addEventListener('change', function () {
