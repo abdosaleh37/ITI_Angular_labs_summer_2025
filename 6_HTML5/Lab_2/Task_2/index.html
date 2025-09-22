@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <div class="container">
+        <div id="div1" ondragover="dragOver(event)" ondrop="drop(event)">
+            <div class="label" id="label1" draggable="true" ondragstart="dragStart(event)">Label 1</div>
+            <div class="label" id="label2" draggable="true" ondragstart="dragStart(event)">Label 2</div>
+            <div class="label" id="label3" draggable="true" ondragstart="dragStart(event)">Label 3</div>
+            <div class="label" id="label4" draggable="true" ondragstart="dragStart(event)">Label 4</div>
+            <div class="label" id="label5" draggable="true" ondragstart="dragStart(event)">Label 5</div>
+            <div class="label" id="label6" draggable="true" ondragstart="dragStart(event)">Label 6</div>
+        </div>
+
+        <div id="div2" ondragover="dragOver(event)" ondrop="drop(event)">
+
+        </div>
+    </div>
+    
+    <style>
+        .container {
+            display: flex;
+        }
+        .container > div {
+            display: inline;
+            width: 40%;
+            height: 600px;
+            margin: 30px auto;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .label {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 25px;
+            border: 2px solid black;
+            background-color: aqua;
+        }
+
+    </style>
+    <script src="main.js"></script>
+</body>
+</html>
