@@ -1,0 +1,92 @@
+#skills{
+background-color: rgb(54, 54, 54);
+color: white;
+padding: 5rem;
+}
+
+#skills #title{
+width: 80%;
+margin: auto;
+text-align: center;
+}
+
+#skills #title h1{
+margin-bottom: 2rem;
+}
+
+#skills #content{
+display: flex;
+justify-content: space-between;
+padding: 4rem;
+}
+
+#skills #content #focus{
+width: 30%;
+margin: 2rem 1rem;
+padding-top: 2.5rem;
+}
+
+#skills #content #focus h3{
+text-align: center;
+}
+
+#skills #content #focus p{
+padding: 1rem 0 0 1rem;
+}
+
+#skills #content #bars{
+width: 60%;
+}
+
+#skills #content #bars span{
+background-color: rgb(102, 101, 101);
+display: inline-block;
+width: 6rem;
+height: 2rem;
+text-align: center;
+margin: 0.7rem 0;
+padding: 0.1rem;
+}
+
+#skills #content #bars progress{
+appearance: none;
+height: 2rem;
+vertical-align: middle;
+width: 75%;
+}
+
+::-webkit-progress-bar{
+background-color: white;
+}
+
+::-webkit-progress-value{
+background-color: rgb(175, 175, 175);
+}
+
+@media(max-width:800px){
+html{
+font-size: 12px;
+}
+#skills{
+padding: 3rem 2rem;
+}
+#skills #content{
+flex-direction: column;
+align-items: center;
+padding: 1rem;
+}
+#skills #content #focus{
+width: 90%;
+}
+
+#skills #content #bars{
+margin-top: 2rem;
+width: 100%;
+}
+#skills #content #bars progress{
+width: 70%;
+}
+#skills #content #bars span{
+width: 4rem;
+}
+}

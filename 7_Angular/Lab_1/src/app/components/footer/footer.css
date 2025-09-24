@@ -1,0 +1,48 @@
+#footer{
+display: flex;
+justify-content: space-between;
+padding: 1.5rem 2rem;
+background-color: rgb(49, 48, 48);
+color: white;
+}
+
+#footer input{
+background-color: transparent;
+color: white;
+width: 10rem;
+height: 3rem;
+margin: 2rem;
+border: 2px solid white;
+}
+
+#footer input:hover{
+opacity: 0.7;
+}
+#footer #copy-right{
+margin: 2rem;
+text-align: center;
+}
+
+#footer a{
+color: white;
+margin: 0.5rem;
+width: 2rem;
+}
+
+#footer i{
+font-size: 1.8rem;
+margin: 0.5rem;
+}
+@media(max-width:600px){
+html{
+font-size: 12px;
+}
+#footer{
+flex-direction: column;
+}
+#footer div{
+width: 90%;
+margin: auto;
+}
+
+}
