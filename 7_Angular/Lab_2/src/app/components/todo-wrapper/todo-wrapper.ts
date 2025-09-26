@@ -13,7 +13,12 @@ export class TodoWrapper {
   nextId = 1;
 
   addTask(task: string){
-    this.tasks.push({id: this.nextId++, title: task, done: false});
+    if(task.trim() == ''){
+      alert("Invalid task!");
+    }
+    else{
+      this.tasks.push({id: this.nextId++, title: task, done: false});
+    }
   }
 
   deleteTask(taskId: number){
