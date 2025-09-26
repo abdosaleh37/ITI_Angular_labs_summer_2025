@@ -1,0 +1,11 @@
+<div id="todo-form">
+  <p id="app-title">To-Do App!</p>
+  <p id="form-title">TodoForm</p>
+
+  <form action="">
+    <label for="task">Add New To-Do</label>
+    <input type="text" placeholder="Enter New Task" id="task" name="task" [(ngModel)]="task">
+
+    <input type="button" value="Add" (click)="sendTask()">
+  </form>
+</div>

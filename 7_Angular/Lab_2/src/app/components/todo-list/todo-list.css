@@ -1,0 +1,63 @@
+#todo-list{
+position: relative;
+padding: 1rem;
+}
+
+#list-desc{
+position: absolute;
+top: 10%;
+left: 40%;
+font-size: 1.5rem;
+font-weight: bold;
+}
+
+#list-title{
+margin: 2rem;
+margin-left: 8rem;
+font-weight: bold;
+font-size: 1.5rem;
+}
+
+table{
+width: 80%;
+margin: auto;
+text-align: center;
+border-collapse: separate;
+border-spacing: 2px;
+}
+
+.task{
+width: 60%;
+}
+
+.done{
+width: 20%;
+}
+
+.actions{
+width: 20%;
+}
+
+table th {
+background-color: rgb(75, 58, 48);
+color: white;
+padding: 10px;
+border: 1px solid #333;
+}
+
+table td {
+padding: 8px 12px;
+border: 1px solid #ccc;
+background-color: white;
+}
+table tr:nth-child(odd) td{
+background-color: rgb(212, 210, 208);
+}
+
+table tr:nth-child(even) td{
+background-color: #f9f9f9;
+}
+
+.completed{
+text-decoration: line-through;
+}

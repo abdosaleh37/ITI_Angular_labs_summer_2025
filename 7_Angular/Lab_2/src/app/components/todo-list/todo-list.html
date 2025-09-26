@@ -1,0 +1,20 @@
+<div id="todo-list">
+  <p id="list-title">TodoList</p>
+  <p id="list-desc">Let's get some work done!</p>
+  <div id="list">
+    <table>
+      <thead>
+        <th class="done">Done</th>
+        <th class="task">Task</th>
+        <th class="actions">Actions</th>
+      </thead>
+      @for(task of tasks; track task.id){
+      <tr>
+        <td class="done"><input type="checkbox" name="done" id="done" [checked]="task.done" (change)="toggleDone(task)"></td>
+        <td class="task" [ngClass]="{' task completed': task.done}">{{ task.title }}</td>
+        <td class="actions"><input type="button" value="Delete" (click)="deleteTask(task.id)"></td>
+      </tr>
+      }
+    </table>
+</div>
+</div>
