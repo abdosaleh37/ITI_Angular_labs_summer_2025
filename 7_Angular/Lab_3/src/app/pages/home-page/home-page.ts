@@ -12,7 +12,7 @@ export class HomePage implements OnInit {
   products: any[] = [];
 
   async ngOnInit() {
-    const response = await fetch('/products.json');
+    const response = await fetch('products.json');
     this.products = await response.json();
   }
 }

@@ -59,10 +59,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Lab_1:build:production"
+              "buildTarget": "Lab_3:build:production"
             },
             "development": {
-              "buildTarget": "Lab_1:build:development"
+              "buildTarget": "Lab_3:build:development"
             }
           },
           "defaultConfiguration": "development"

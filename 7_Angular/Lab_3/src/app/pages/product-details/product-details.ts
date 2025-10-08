@@ -16,7 +16,7 @@ export class ProductDetails implements OnInit {
 
   async ngOnInit() {
     const id = Number(this.route.snapshot.paramMap.get('productId'));
-    const response = await fetch('/products.json');
+    const response = await fetch('products.json');
     const products = await response.json();
     this.product = products.find((p: any) => p.id === id);
 

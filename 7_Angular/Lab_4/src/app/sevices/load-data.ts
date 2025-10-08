@@ -7,7 +7,7 @@ export class LoadData{
   products: any[] = [];
 
   async getAllProducts(): Promise<any[]> {
-    const response = await fetch('/products.json');
+    const response = await fetch('products.json');
     this.products = await response.json();
     return this.products;
   }

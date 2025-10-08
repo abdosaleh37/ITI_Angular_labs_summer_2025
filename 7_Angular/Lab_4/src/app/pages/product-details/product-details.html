@@ -3,7 +3,7 @@
     <div class="product-detail">
 
       <div class="product-images">
-        <img [src]="image" [alt]="product.title" class="main-image" onerror="this.src='/fallback.jpg'">
+        <img [src]="image" [alt]="product.title" class="main-image" onerror="this.src='fallback.jpg'">
         <div class="secondary-images-container">
           @for(img of product.images; track $index){
             <img
@@ -12,7 +12,7 @@
               class="secondary-image"
               [class.active]="image === img"
               (click)="changeImage($index)"
-              onerror="this.src='/fallback.jpg'">
+              onerror="this.src='fallback.jpg'">
           }
         </div>
       </div>
